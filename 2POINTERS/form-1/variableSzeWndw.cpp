@@ -32,4 +32,5 @@ void main(){
             head=tail-1;//?WHY  head-tail+1=0 -> head=tail-1,tail staritng from 0
         }
     }
+    cout<<ans<<endl;
 }
