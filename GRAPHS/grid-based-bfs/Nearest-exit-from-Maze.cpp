@@ -1,26 +1,13 @@
 /*
-Nearest Exit in Maze
+LC 1926 - Nearest Exit from Entrance in Maze
 
-Given an m×n maze:
-'.' = empty cell, '+' = wall.
-Given entrance = [row, col].
-
-Move up/down/left/right through empty cells only.
-Find the minimum steps from entrance to the nearest border
-cell (exit). The entrance itself is not an exit.
-Return -1 if no exit is reachable.
+'.' = empty, '+' = wall. Start at entrance = [row, col], move up/down/left/right.
+Return min steps to any border cell (entrance itself is NOT an exit), else -1.
 
 Example:
-maze = {{'+','+','.','+'},
-        {'.','.','.','+'},
-        {'+','+','+','.'}}
-entrance = {1,2}
-
-Output: 1
-
-Explanation:
-Nearest exit is [0,2], reachable in 1 step.
-Other exits: [1,0] (2 steps), [2,3] (unreachable).
++ + . +
+. . . +      entrance = {1,2}
++ + + .      Output: 1  ([0,2] in 1 step; [1,0] needs 2; [2,3] unreachable)
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -37,17 +24,36 @@ class Answer{
         vector<vector<int>> dist(m,vector<int>(n,-1));
         queue<pair<int,int>> q;
         q.push({sx,sy});
+        dist[sx][sy]=0;
         while(!q.empty()){
             auto it=q.front();
+            q.pop();
             int currx=it.first;
             int curry=it.second;
             for(int i=0;i<4;i++){
-                int neighx=currx+dx[i];
-                int neighy=curry+dy[i];
-                if(maze[neighx][neighy]!='+' &&(neighx>=0 && neighx<))
+                int nx=currx+dx[i];
+                int ny=curry+dy[i];
+                if(nx>=0 && nx<m && ny>=0 && ny<n){
+                    if(maze[nx][ny]!='+' && dist[nx][ny]==-1){
+                        dist[nx][ny]=dist[currx][curry]+1;
+                        q.push({nx,ny});
+                    }
+                }
             }
 
         }
+        int minDist=INT_MAX;
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                if((i==0 || i==m-1 || j==0 || j==n-1) && dist[i][j]!=-1 && !(i==sx && j==sy)){
+                    minDist=min(minDist,dist[i][j]);
+                }
+            }
+        }
+        if(minDist==INT_MAX){
+            return -1;
+        }
+        return minDist;
 
     }
 };
