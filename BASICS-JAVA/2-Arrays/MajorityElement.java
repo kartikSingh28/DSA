@@ -24,7 +24,11 @@ public class MajorityElement{
             freq.put(x,freq.getOrDefault(x, 0)+1);
         }
 
-        for(Map.entry)
+        for(Map.Entry<Integer,Integer> e:freq.entrySet()){
+            if(e.getValue()>n/2){
+                System.out.println(e.getKey());
+            }
+        }
         sc.close();
     }
 }
