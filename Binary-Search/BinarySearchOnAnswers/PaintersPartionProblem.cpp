@@ -1,3 +1,9 @@
+/*
+The Painter's Partition Problem
+n boards with given lengths and k painters. Each painter paints one contiguous block of boards,
+1 unit of length per unit of time. Minimize the time to paint everything (= the largest block sum).
+Example: k=2, boards=[10,20,30,40] -> 60
+*/
 #include <bits/stdc++.h>
 using namespace std;
 int n,k;

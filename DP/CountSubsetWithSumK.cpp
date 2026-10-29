@@ -1,3 +1,8 @@
+/*
+Count Subsets with Sum K (GFG: Perfect Sum Problem)
+Count the subsets of the array whose sum is exactly k.
+Example: arr=[2,3,5,6,8,10], k=10 -> 3   ({2,8}, {10}, {2,3,5})
+*/
 #include <bits/stdc++.h>
 using namespace std;
 vector<vector<int>> dp;

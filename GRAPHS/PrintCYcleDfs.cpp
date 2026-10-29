@@ -1,3 +1,8 @@
+/*
+Find and Print a Cycle in a Directed Graph (DFS colouring)
+If the graph has a cycle, print the nodes of any one cycle; otherwise print "No Cycle".
+(CSES 1678 Round Trip II uses the same idea.)
+*/
 #include <bits/stdc++.h>
 using namespace std;
 vector<vector<int>> g;

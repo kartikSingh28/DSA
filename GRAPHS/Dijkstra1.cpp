@@ -1,3 +1,8 @@
+/*
+Dijkstra's Algorithm
+Weighted graph with non-negative edge weights: find the shortest distance from the source
+to every node, using a min-heap.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

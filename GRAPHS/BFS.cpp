@@ -1,3 +1,8 @@
+/*
+BFS on a Directed Graph
+Read n nodes, m directed edges and a source. Use BFS to find the shortest distance
+(number of edges) from the source to every node, -1 if unreachable.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 vector<vector<int>> g;

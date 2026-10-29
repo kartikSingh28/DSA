@@ -1,3 +1,8 @@
+/*
+Multi-Source BFS on a Grid
+Every cell marked 's' is a source. Find each cell's distance to its nearest source
+(start the BFS with all sources in the queue at distance 0).
+*/
 #include <bits/stdc++.h>
 using namespace std;
 int n,m;

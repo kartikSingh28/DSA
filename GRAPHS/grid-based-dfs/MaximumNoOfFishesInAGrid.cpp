@@ -1,3 +1,10 @@
+/*
+Maximum Number of Fish in a Grid (LC 2658)
+grid[r][c] is 0 (land) or the number of fish in that water cell. A fisher can start on any
+water cell, move between adjacent water cells and catch every fish there.
+Return the most fish that can be caught in one connected water region.
+Example: [[0,2,1,0],[4,0,0,3],[1,0,0,4],[0,3,2,0]] -> 7
+*/
 #include <bits/stdc++.h>
 using namespace std;
 int n,m;

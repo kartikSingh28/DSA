@@ -1,3 +1,9 @@
+/*
+Connected Components (DFS)
+Label every node with its component, print the size of each component, count the pairs of
+nodes that are in different components (sum of size*(n-size), divided by 2), then answer
+queries: are x and y in the same component?
+*/
 #include <bits/stdc++.h>
 using namespace std;
 vector<vector<int>> g;

@@ -1,3 +1,7 @@
+/*
+Shortest Path in an Unweighted Graph (BFS + parent array)
+Find the shortest path from source to end and print the path itself, not just its length.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 vector<vector<int>> g;

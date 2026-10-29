@@ -1,3 +1,9 @@
+/*
+Print Subsets with Sum K (DP + backtracking)
+Same task as PrintSubSetsWithSUmK, but use the subset-sum DP table to prune:
+only follow a choice if k is still reachable from there.
+Example: arr=[1,2,3], k=3 -> {1,2} and {3}
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

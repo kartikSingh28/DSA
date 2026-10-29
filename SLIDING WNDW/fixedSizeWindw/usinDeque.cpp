@@ -1,3 +1,8 @@
+/*
+Minimum of Every Window of Size K (monotonic deque)
+For every contiguous window of size k, output its minimum element, in O(n) total.
+Example: arr=[1,3,-1,-3,5,3,6,7], k=3 -> [-1,-3,-3,-3,3,3]
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

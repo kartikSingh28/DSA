@@ -1,3 +1,8 @@
+/*
+Disjoint Set Union (DSU) basics
+Implement find (follow parents up to the root) and union (attach one root to the other)
+for n elements.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

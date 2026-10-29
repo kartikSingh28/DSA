@@ -1,3 +1,8 @@
+/*
+Shortest Path in a Grid (BFS)
+n x m grid where '*' is blocked and '.' is free. Find the minimum number of moves
+(up/down/left/right) from (sx,sy) to (ex,ey), or -1 if it can't be reached.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

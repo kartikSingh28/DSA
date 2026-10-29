@@ -1,3 +1,8 @@
+/*
+Index of First 1 in a Sorted Binary Array
+The array is all 0s followed by all 1s. Return the index of the first 1, or -1 if there is no 1. O(log n).
+Example: [0,0,0,0,1,1,1,1] -> 4
+*/
 #include <bits/stdc++.h>
 using namespace  std;
 

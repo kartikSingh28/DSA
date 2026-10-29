@@ -1,3 +1,8 @@
+/*
+Check if a Graph is Bipartite (DFS 2-colouring)
+Colour every node with one of 2 colours so that no edge joins two nodes of the same colour.
+Print whether that is possible. (LC 785 is the same problem.)
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

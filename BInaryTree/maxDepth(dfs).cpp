@@ -1,3 +1,8 @@
+/*
+Maximum Depth of Binary Tree (LC 104), DFS version
+Return the number of nodes on the longest path from the root down to a leaf.
+Example: [1,2,3,4,5] -> 3
+*/
 #include <bits/stdc++.h>
 using namespace std;
 struct TreeNode{

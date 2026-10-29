@@ -1,3 +1,8 @@
+/*
+Partition Equal Subset Sum (LC 416)
+Can the array be split into two subsets with equal sums?
+Example: [1,5,11,5] -> true   ({1,5,5} and {11})
+*/
 #include <bits/stdc++.h>
 using namespace std;
 vector<vector<int>> dp;

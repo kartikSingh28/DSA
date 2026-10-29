@@ -1,3 +1,9 @@
+/*
+Boundary Traversal of Binary Tree (GFG)
+Return the boundary anti-clockwise starting at the root: root, left boundary (no leaves),
+all leaves left to right, then the right boundary (no leaves) bottom-up.
+Example: [1,2,3,4,5,6,7] -> [1,2,4,5,6,7,3]
+*/
 #include <bits/stdc++.h>
 using namespace std;
 struct TreeNode{

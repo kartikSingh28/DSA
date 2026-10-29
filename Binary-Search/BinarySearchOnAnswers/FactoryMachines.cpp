@@ -1,3 +1,9 @@
+/*
+Factory Machines (CSES 1620)
+n machines; machine i makes one product every k[i] seconds, all working at the same time.
+Find the minimum time needed to make t products.
+Example: n=3, t=7, k=[3,2,5] -> 8
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

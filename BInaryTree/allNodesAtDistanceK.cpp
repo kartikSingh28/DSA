@@ -1,3 +1,9 @@
+/*
+All Nodes Distance K in Binary Tree (LC 863)
+Given the root, a target node and k, return the values of all nodes exactly k edges away from target
+(you can move up through parents as well as down).
+Example: root=[3,5,1,6,2,0,8,null,null,7,4], target=5, k=2 -> [7,4,1]
+*/
 #include <bits/stdc++.h>
 using namespace std;
 struct TreeNode{

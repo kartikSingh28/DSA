@@ -1,3 +1,8 @@
+/*
+Detect Cycle in an Undirected Graph (Union-Find)
+For each edge (u,v): if u and v already have the same root, the edge closes a cycle;
+otherwise union them. Print true if there is a cycle, else false.
+*/
 #include <bits/stdc++.h>
 
 using namespace std;// agr cycle hogi toh kisi 1 point of time pr find(x)==find(y) agr hogya to cycle hai wrna union krte rho

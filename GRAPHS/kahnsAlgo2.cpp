@@ -1,3 +1,7 @@
+/*
+Lexicographically Smallest Topological Order (Kahn's algorithm + min-heap)
+Given a DAG, print the topological order that comes first in dictionary order.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 vector<vector<int>> g;

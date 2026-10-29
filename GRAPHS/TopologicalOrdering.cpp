@@ -1,3 +1,8 @@
+/*
+Topological Sort (DFS)
+Given a DAG, print an order where every edge u -> v has u before v.
+(Add a node after all its children are done, then reverse the list.)
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
